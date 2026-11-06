@@ -1,0 +1,10 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/mcp.schema.json",
+  "mcpServers": {
+    "mflow": {
+      "type": "streamable-http",
+      "url": "https://mcp.m-flow.io/mcp",
+      "headers": {"Authorization": "Bearer ${MFLOW_TOKEN}"}
+    }
+  }
+}

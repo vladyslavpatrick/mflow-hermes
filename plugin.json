@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "mflow",
+  "version": "0.1.0",
+  "description": "mFlow for Hermes Agent: boards, Knowledge Base/ADRs, coding agent delegation.",
+  "author": {"name": "mFlow", "url": "https://m-flow.io"},
+  "homepage": "https://m-flow.io",
+  "repository": "https://github.com/vladyslavpatrick/mflow-hermes",
+  "license": "MIT",
+  "extensions": {"com.nousresearch.hermes": {"servers": {"mflow": {"timeout": 120}}}}
+}

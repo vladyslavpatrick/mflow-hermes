@@ -1,0 +1,21 @@
+# Example native Hermes MCP config for mFlow OAuth (works today).
+#
+# Portable Agent Plugins v1 packages cannot declare `auth: oauth` in mcp.json,
+# so for OAuth you add a same-named entry to ~/.hermes/config.yaml. Native
+# config overrides the portable package's server entry.
+#
+# After adding this, authenticate once with:
+#   hermes mcp login mflow
+#
+# Access tokens last 90 days and there is no refresh grant yet, so you must
+# re-run `hermes mcp login mflow` every 90 days. For headless boxes, follow the
+# Hermes "OAuth over SSH" guide.
+
+mcp_servers:
+  mflow:
+    url: "https://mcp.m-flow.io/mcp"
+    auth: oauth
+    timeout: 120
+    # Optional hardening:
+    # tools: { exclude: ["delete_*", "transfer_knowledge_base"] }
+    # trust: untrusted   # approve every write
