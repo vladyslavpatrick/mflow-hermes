@@ -7,5 +7,5 @@
   "homepage": "https://m-flow.io",
   "repository": "https://github.com/vladyslavpatrick/mflow-hermes",
   "license": "MIT",
-  "extensions": {"com.nousresearch.hermes": {"servers": {"mflow": {}}}}
+  "extensions": {"com.nousresearch.hermes": {"servers": {"mflow": {"trust": "untrusted"}}}}
 }
